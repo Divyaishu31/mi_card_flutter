@@ -11,7 +11,7 @@ class myApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal.shade100,
+        backgroundColor: Colors.teal.shade400,
         body: SafeArea(
           child: Column(
             children: <Widget>[
@@ -30,12 +30,26 @@ class myApp extends StatelessWidget {
               Text(
                 'SOFTWARE DEVELOPER',
                 style: TextStyle(
-                    fontFamily: 'SourceSans',
                     fontSize: 10,
                     letterSpacing: 2.5,
                     fontWeight: FontWeight.bold,
-                    fontStyle: FontStyle.normal
-                ),
+                    fontStyle: FontStyle.normal),
+              ),
+              Card(
+                color: Colors.white60,
+                margin: EdgeInsets.symmetric(vertical: 30, horizontal: 10),
+                child: Padding(
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    child: ListTile(
+                      leading: Icon(Icons.phone, size: 20, color: Colors.teal),
+                      title: Text(
+                        '+91 8109908325',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    )),
               ),
             ],
           ),
